@@ -1,0 +1,44 @@
+<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Window
+    x:Class="learn_winui.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:learn_winui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    >
+
+    <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <CalendarView
+            SelectionMode="Single"
+            IsGroupLabelVisible="True"
+            IsOutOfScopeEnabled="True"
+            Language="en"
+            CalendarIdentifier="GregorianCalendar" />
+    </StackPanel>-->
+    <ScrollViewer HorizontalAlignment="Left" 
+                  Margin="10, 10, 0, 0"
+                  VerticalScrollMode="Enabled" 
+                  VerticalScrollBarVisibility="Auto">
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top">
+            <TextBlock
+                Margin="10"
+                Foreground="LightBlue"
+                TextWrapping="Wrap">
+                this is TextBlock
+            </TextBlock>
+
+            <TextBlock>
+                <LineBreak />
+            </TextBlock>
+
+            <TextBox Header="Name" PlaceholderText="Name" />
+            
+        </StackPanel>
+    </ScrollViewer>
+</Window>
