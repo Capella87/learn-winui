@@ -30,6 +30,8 @@ namespace learn_winui
         {
             this.InitializeComponent();
             this.Title = "Tutorial";
+            this.ExtendsContentIntoTitleBar = true;
+            this.SetTitleBar(null);
         }
     }
 }
